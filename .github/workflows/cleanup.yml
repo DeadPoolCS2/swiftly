@@ -40,7 +40,7 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                os: [Linux, windows-latest]
+                os: [Linux]
                 include:
                     - os: Linux
                       container: registry.gitlab.steamos.cloud/steamrt/sniper/sdk
