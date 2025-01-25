@@ -93,6 +93,7 @@ void ScreenMenu::ProcessOptions()
     int processedItems = 0;
     int totalProcessedItems = 0;
     std::vector<std::pair<std::string, std::string>> tempmap;
+    
 
     int maxProcessedItems = (g_Config->FetchValue<bool>("core.menu.buttons.exit.option") ? (pages == 0 ? 9 : 8) : (pages == 0 ? 10 : 9));
     for (const std::pair<std::string, std::string> entry : this->options)
